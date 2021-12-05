@@ -36,38 +36,10 @@ class MainFragment : Fragment() {
                     viewModel.userReposList = t
                     reposAdapter = ReposAdapter(t)
                 }
-//                reposAdapter = t?.let { ReposAdapter(it) }!!
-//                reposAdapter.notifyDataSetChanged()
-//                recyclerViewBooks.adapter = booksAdapter
             }
 
         })
 
     }
-
-//    override fun onActivityCreated(savedInstanceState: Bundle?) {
-//        super.onActivityCreated(savedInstanceState)
-//        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-//
-////        viewModel.loadUsers()
-//
-//        viewModel.getRepos()?.observe( viewLifecycleOwner, object : Observer<List<ReposModel>> {
-//            override fun onChanged(t: List<ReposModel>?) {
-//                if (t != null) {
-//                    viewModel.userReposList = t
-//                    reposAdapter = ReposAdapter(t)
-//                }
-////                reposAdapter = t?.let { ReposAdapter(it) }!!
-////                reposAdapter.notifyDataSetChanged()
-////                recyclerViewBooks.adapter = booksAdapter
-//            }
-//
-//        })
-
-//        if(viewModel.userReposList!= null) {
-//            reposAdapter = ReposAdapter(viewModel.userReposList)
-//            reposAdapter.notifyDataSetChanged()
-//        }
-//    }
 
 }
