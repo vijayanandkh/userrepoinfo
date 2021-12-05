@@ -18,7 +18,7 @@ class MainViewModel : ViewModel() {
 
     var retrofitApiInterface = RetrofitApiInterface.getRetrofitClientInterface()
 
-    val userid = "vijayanandkh"
+    val userid = "testuserid"
 
     lateinit var userReposList : List<ReposModel>
     lateinit var reposInterface : ReposInterface
